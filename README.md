@@ -16,8 +16,8 @@ Fisher's Iris data set, also known as the **Iris flower data set**, is a dataset
     4. Performs any other analysis you think is appropriate
 
 
-
-
+M understanding of outputting a summary of the variables is getting things like the mean, standard deviation, mode, median, min or max values given a set of data.
+Of course, some of these would be better used in certain data types, and given these are tiny measurements taken from subspecies of flowers; I think min, max and mean values would be of somewhat importance.
 
 
 
@@ -26,4 +26,5 @@ Fisher's Iris data set, also known as the **Iris flower data set**, is a dataset
 
 References.
 
-https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
+https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 - Information concerning the data set
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html - How to use CSV with Pandas
