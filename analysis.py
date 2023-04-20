@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 Iris = pd.read_csv(
     "iris.data",
     #usecols=column_subset,
-    nrows=149
+    #nrows=149
     )
 
 #providing values for the new row to be input as a dictionary

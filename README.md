@@ -16,10 +16,13 @@ Fisher's Iris data set, also known as the **Iris flower data set**, is a dataset
     4. Performs any other analysis you think is appropriate
 
 
-M understanding of outputting a summary of the variables is getting things like the mean, standard deviation, mode, median, min or max values given a set of data.
+My understanding of outputting a summary of the variables is getting things like the mean, standard deviation, mode, median, min or max values given a set of data.
 Of course, some of these would be better used in certain data types, and given these are tiny measurements taken from subspecies of flowers; I think min, max and mean values would be of somewhat importance.
 
-
+Firstly I must get the data set to output to a txt file. So there was a large amount of work for me in trying to get pandas to work. Although it was not a requirement(pandas), I believe it will work out in my favour, given some time and practice.
+I spent a large amunt of time reading online resources such as GeeksforGeeks and AskPython, and playing with the different ways of outputting the data.
+Initially I had problems with trying to get the file to read properly, and this was remedied with some kind advice from Andrew and the usage of relative file paths.
+Then I had to deal with the problems of trying to output column headings onto the dataset and encountering the 0 index issue -- STILL IN PROGRESS --
 
 
 
