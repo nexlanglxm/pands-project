@@ -2,57 +2,37 @@
 import pandas as pd
 #numpy will also be called to access the np attributes and evaluate some maths
 import numpy as np
+from numpy import random
 #and finally, matplotlib will be used to save a histogram and display a scatterplot
 import matplotlib.pyplot as plt
 '''firstly, the data will be called in and displayed using pandas,
  and then output to a text file'''
 
-'''column_subset = [
-    "sepal length",
-    "sepal width",
-    "petal length",
-    "petal width",
-    "flower",
-]'''
-Iris = pd.read_csv(
-    "iris.data",
-    #usecols=column_subset,
-    #nrows=149
-    )
 
-#providing values for the new row to be input as a dictionary
-new_row = ("Sepal length",
-    "Sepal width",
-    "Petal length",
-    "Petal width",
-    "Flower",
-    )
-Iris.loc[0] = new_row
+Iris = pd.read_csv("iris_csv.csv")
+print(Iris.shape)
+print(Iris.describe())
+
+np.savetxt(Iris.txt, Iris.describe)
+
 '''
-Iris.columns = ["Sepal length",
-    "Sepal width",
-    "Petal length",
-    "Petal width",
-    "Flower",
-    ]'''
-print(Iris)
-#Iris.head()
-#Iris.info()
-#Iris.to_frame(iris.txt)
-#df.to_frame(iris.txt)
 
 
 
 
 
 
-
-
-
-
-
-'''i also want to analyse the mean, min and max values of this data'''
+#i also want to analyse the mean, min and max values of this data
 #pd.DataFrame(filename)
 #print(df)
+with open(Iris):
+    describe()'''
+Iris.groupby('class').agg(['mean','median','max','min'])
+Iris.groupby('class').agg([np.mean, np.median, np.max, np.min])
+print(Iris.groupby)
 
-'''the code for making the histogram which saves to png'''
+#the code for making the histogram which saves to png
+'''
+x = random.normal(loc = 5, scale = 2, size=(1000))
+plt.hist(x, color="c")
+plt.show()'''
