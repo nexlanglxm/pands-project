@@ -41,6 +41,21 @@ I managed to get a histogram output going to a png file in the way desired.
 References.
 
 https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 - Information concerning the data set
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html - How to use CSV with Pandas
+
 https://www.askpython.com/python/examples/calculate-summary-statistics - how to calculate summary stats
+
 https://chartio.com/resources/tutorials/how-to-save-a-plot-to-a-file-using-matplotlib/ - Saving files using matplotlib
+
+https://learnpython.com/blog/how-to-summarize-data-in-python/ - Data summaries in Python
+
+GeeksforGeeks. (2020). Add column names to dataframe in Pandas. [online] Available at: https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/ [Accessed 20 Apr. 2023]
+
+.Kumar, A. (2023). Pandas Dataframe: How to Add Rows & Columns. [online] Data Analytics. Available at: https://vitalflux.com/pandas-dataframe-how-to-add-rows-columns/ [Accessed 24 Apr. 2023].
+
+numpy.org. (n.d.). numpy.savetxt — NumPy v1.22 Manual. [online] Available at: https://numpy.org/doc/stable/reference/generated/numpy.savetxt.html.
+
+Pydata.org. (2019). pandas.read_csv — pandas 0.25.3+0.g43013d49f.dirty documentation. [online] Available at: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html.Python, - How to use CSV with Pandas
+
+R. (n.d.). pandas Sort: Your Guide to Sorting Data in Python – Real Python. [online] realpython.com. Available at: https://realpython.com/pandas-sort-python/#using-column-labels-to-sort [Accessed 20 Apr. 2023].
+
+Verma, J. (2020). How to Calculate Summary Statistics in Python? - AskPython. [online] How to calculate summary statistics in Python? - AskPython. Available at: https://www.askpython.com/python/examples/calculate-summary-statistics 
