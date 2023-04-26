@@ -22,11 +22,18 @@ Of course, some of these would be better used in certain data types, and given t
 Firstly I must get the data set to output to a txt file. So there was a large amount of work for me in trying to get pandas to work. Although it was not a requirement(pandas), I believe it will work out in my favour, given some time and practice.
 I spent a large amount of time reading online resources such as GeeksforGeeks and AskPython, and playing with the different ways of outputting the data.
 Initially I had problems with trying to get the file to read properly, and this was remedied with some kind advice from Andrew and the usage of relative file paths.
-Then I had to deal with the problems of trying to output column headings onto the dataset and encountering the 0 index issue -- STILL IN PROGRESS --
+Then I had to deal with the problems of trying to output column headings onto the dataset and encountering the 0 index issue.
 
 Following this, I elected to use a file which I got online (@ this link https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset) which already had the columns in place as I realised I was wasting a large amount of time on something of little relative importance.
 
 I then spent a while playing around trying to get numPy to output the summary into a single text file.
+
+I actually found the iloc feature when browsing solutions regarding datasets (https://www.analyticsvidhya.com/blog/2021/06/guide-to-data-visualization-with-python-part-1/) and it proved to be of much use to me and might have also made it possible to use the original dataset, good to know, and might go back and change that once I make more significant progress in other aspects. 
+This did lead me to successful creation of my histgrams and scatterplots, now to get the different variables to output.
+I managed to get a histogram output going to a png file in the way desired. 
+
+
+
 
 
 
@@ -36,3 +43,4 @@ References.
 https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 - Information concerning the data set
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html - How to use CSV with Pandas
 https://www.askpython.com/python/examples/calculate-summary-statistics - how to calculate summary stats
+https://chartio.com/resources/tutorials/how-to-save-a-plot-to-a-file-using-matplotlib/ - Saving files using matplotlib
