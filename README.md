@@ -31,7 +31,7 @@ I then spent a while playing around trying to get numPy to output the summary in
 I actually found the iloc feature when browsing solutions regarding datasets (https://www.analyticsvidhya.com/blog/2021/06/guide-to-data-visualization-with-python-part-1/) and it proved to be of much use to me and might have also made it possible to use the original dataset, good to know, and might go back and change that once I make more significant progress in other aspects. 
 This did lead me to successful creation of my histgrams and scatterplots, now to get the different variables to output.
 I managed to get a histogram output going to a png file in the way desired. 
-
+I went back and played around with the min(),max() and mean() keyword arguments to get the code to output numeric only values, and then began again working towards outputting these values into the text file.
 
 
 
