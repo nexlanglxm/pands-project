@@ -21,11 +21,22 @@ iris_species = iris.iloc[:,-1]
 iris.groupby('class').agg(['mean','median','max','min'])
 iris.groupby('class').agg([np.mean, np.median, np.max, np.min])
 print(iris.groupby)'''
-print(iris.min())
-print(iris.max())
-print(iris.mean()) 
+print(iris.min(0,True,None,True))
+print(iris.max(0,True,None,True))
+print(iris.mean(0,True,None,True))
+
 
 # the code for making the histogram which saves to png
+fig, ax = plt.subplots()
+ax.hist(iris_feat['sepallength'])
+#set labels & titles
+ax.set_title('Sepal length of all species')
+ax.set_xlabel('Centimetres')
+ax.set_ylabel('Frequency')
+plt.savefig('histogram.png')
+
+'''MAKE THIS CODE WORK TO MAKE HISTOGRAMS FOR THE 3 DIFFERENT VARIABLES'''
+#the code which will output the summary data into three separate histograms
 fig, ax = plt.subplots()
 ax.hist(iris_feat['sepallength'])
 #set labels & titles
