@@ -12,17 +12,18 @@ iris = pd.read_csv("iris_csv.csv")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
-print(iris.shape)
-print(iris.describe())
+#print(iris.shape)
+#print(iris.describe())
 #np.savetxt(iris.txt, iris.describe)
-'''
 
-#i also want to analyse the mean, min and max values of this data
 '''
+#i also want to analyse the mean, min and max values of this data
 iris.groupby('class').agg(['mean','median','max','min'])
 iris.groupby('class').agg([np.mean, np.median, np.max, np.min])
-print(iris.groupby)
-
+print(iris.groupby)'''
+print(iris.min())
+print(iris.max())
+print(iris.mean()) 
 
 # the code for making the histogram which saves to png
 fig, ax = plt.subplots()
@@ -32,8 +33,6 @@ ax.set_title('Sepal length of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
 plt.savefig('histogram.png')
-plt.show
-
 
 
 # scatter plot to show the relationship between sepal lenght and sepal width
@@ -47,6 +46,5 @@ for i in range(len(iris_feat['sepallength'])):
 ax.set_xlabel('Sepal Length (cm)')
 ax.set_ylabel('Sepal Width (cm)')
 ax.set_title('Sepal Length vs Width')
-# plt.savefig(scatterplot.png)
 ax.legend()
 plt.show()
