@@ -28,12 +28,12 @@ print(iris.mean(0,True,None,True))
 
 # the code for making the histogram which saves to png
 fig, ax = plt.subplots()
-ax.hist(iris_feat['sepallength'])
+ax.hist(iris.mean())
 #set labels & titles
-ax.set_title('Sepal length of all species')
-ax.set_xlabel('Centimetres')
-ax.set_ylabel('Frequency')
-plt.savefig('histogram.png')
+ax.set_title('mean values of all species')
+#ax.set_xlabel()
+#ax.set_ylabel()
+plt.savefig('histogrammean.png')
 
 '''MAKE THIS CODE WORK TO MAKE HISTOGRAMS FOR THE 3 DIFFERENT VARIABLES'''
 #the code which will output the summary data into three separate histograms
