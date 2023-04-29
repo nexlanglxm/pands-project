@@ -34,6 +34,8 @@ I managed to get a histogram output going to a png file in the way desired.
 I went back and played around with the min(),max() and mean() keyword arguments to get the code to output numeric only values, and then began again working towards outputting these values into the text file.
 
 
+After outputting mean semi-successfully to a png file, I am not sure it is the most meaningful to output.. or at least in the fashion that I have done so. I will explore further.
+
 
 
 
