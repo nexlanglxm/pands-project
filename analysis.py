@@ -12,10 +12,6 @@ iris = pd.read_csv("iris_csv.csv")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
-#print(iris.shape)
-#print(iris.describe())
-#np.savetxt(iris.txt, iris.describe)
-
 '''
 #i also want to analyse the mean, min and max values of this data
 iris.groupby('class').agg(['mean','median','max','min'])
@@ -24,6 +20,7 @@ print(iris.groupby)'''
 print(iris.min(0,True,None,True))
 print(iris.max(0,True,None,True))
 print(iris.mean(0,True,None,True))
+
 
 
 # the code for making the histogram which saves to png
