@@ -12,6 +12,7 @@ iris = pd.read_csv("iris_csv.csv")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
+
 '''
 #i also want to analyse the mean, min and max values of this data
 iris.groupby('class').agg(['mean','median','max','min'])
@@ -24,13 +25,8 @@ print(iris.mean(0,True,None,True))
 
 
 # the code for making the histogram which saves to png
-fig, ax = plt.subplots()
-ax.hist(iris.mean())
-#set labels & titles
-ax.set_title('mean values of all species')
-#ax.set_xlabel()
-#ax.set_ylabel()
-plt.savefig('histogrammean.png')
+iris.plot(kind="hist")
+plt.savefig('histfreq.png')
 
 '''MAKE THIS CODE WORK TO MAKE HISTOGRAMS FOR THE 3 DIFFERENT VARIABLES'''
 #the code which will output the summary data into three separate histograms
