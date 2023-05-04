@@ -13,16 +13,15 @@ iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
 
-'''
 #i also want to analyse the mean, min and max values of this data
-iris.groupby('class').agg(['mean','median','max','min'])
-iris.groupby('class').agg([np.mean, np.median, np.max, np.min])
-print(iris.groupby)'''
+
 print(iris.min(0,True,None,True))
 print(iris.max(0,True,None,True))
-print(iris.mean(0,True,None,True))
+mean = (iris.mean(0,True,None,True))
 
+array = mean.to_numpy()
 
+np.savetxt("output.txt",array)
 
 # the code for making the histogram which saves to png
 iris.plot(kind="hist")
