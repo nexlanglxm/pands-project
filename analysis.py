@@ -17,11 +17,11 @@ iris_species = iris.iloc[:,-1]
 
 print(iris.min(0,True,None,True))
 print(iris.max(0,True,None,True))
-mean = (iris.mean(0,True,None,True))
+mean = (iris.mean(0,True,None,True)), (iris.max(0,True,None,True)), (iris.min(0,True,None,True))
 
 array = mean.to_numpy()
 
-np.savetxt("output.txt",array)
+np.savetxt("output.txt",tuple)
 
 # the code for making the histogram which saves to png
 iris.plot(kind="hist")
