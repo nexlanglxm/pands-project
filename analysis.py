@@ -44,9 +44,17 @@ ax.hist(iris_feat['sepallength'])
 ax.set_title('Sepal length of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
-plt.savefig('histogram.png')
+plt.savefig('sepallength.png')
 
+fig, ax = plt.subplots()
+ax.hist(iris_feat['sepalwidth'])
+#set labels & titles
+ax.set_title('Sepal width of all species')
+ax.set_xlabel('Centimetres')
+ax.set_ylabel('Frequency')
+plt.savefig('sepalwidth.png')
 
+'''for the pairs of variables'''
 # scatter plot to show the relationship between sepal lenght and sepal width
 # first setting the colors dictionary for a nice tidy output
 colors = {'Iris-setosa':'g','Iris-virginica':'b','Iris-versicolor':'r'}
