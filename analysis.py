@@ -15,13 +15,22 @@ iris_species = iris.iloc[:,-1]
 
 #i also want to analyse the mean, min and max values of this data
 
+#print("These are the minimum values of the different features")
+mean = (iris.mean(0,True,None,True))
 print(iris.min(0,True,None,True))
+min = (iris.min(0,True,None,True))
+#print("These are the maximum values of the different features")
 print(iris.max(0,True,None,True))
-mean = (iris.mean(0,True,None,True)), (iris.max(0,True,None,True)), (iris.min(0,True,None,True))
+max = (iris.max(0,True,None,True))
 
-array = mean.to_numpy()
+arr = mean.to_numpy()
+arr2 = min.to_numpy()
+arr3 = max.to_numpy()
 
-np.savetxt("output.txt",tuple)
+np.savetxt("outputmean.txt",arr)
+np.savetxt("outputmin.txt",arr2)
+np.savetxt("outputmax.txt",arr3)
+
 
 # the code for making the histogram which saves to png
 iris.plot(kind="hist")
@@ -49,5 +58,15 @@ for i in range(len(iris_feat['sepallength'])):
 ax.set_xlabel('Sepal Length (cm)')
 ax.set_ylabel('Sepal Width (cm)')
 ax.set_title('Sepal Length vs Width')
+ax.legend()
+plt.show()
+
+colors = {'Iris-setosa':'g','Iris-virginica':'b','Iris-versicolor':'r'}
+fig, ax = plt.subplots()
+for i in range(len(iris_feat['petallength'])):
+    plt.scatter(iris_feat['petallength'][i], iris_feat['petalwidth'][i],color=colors[iris_species[i]])
+ax.set_xlabel('Petal Length (cm)')
+ax.set_ylabel('Petal Width (cm)')
+ax.set_title('Petal Length vs Width')
 ax.legend()
 plt.show()
