@@ -13,14 +13,12 @@ iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
 
-#i also want to analyse the mean, min and max values of this data
-
 #print("These are the minimum values of the different features")
 mean = (iris.mean(0,True,None,True))
-print(iris.min(0,True,None,True))
+#print(iris.min(0,True,None,True))
 min = (iris.min(0,True,None,True))
 #print("These are the maximum values of the different features")
-print(iris.max(0,True,None,True))
+#print(iris.max(0,True,None,True))
 max = (iris.max(0,True,None,True))
 
 arr = mean.to_numpy()
