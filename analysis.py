@@ -54,6 +54,22 @@ ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
 plt.savefig('sepalwidth.png')
 
+fig, ax = plt.subplots()
+ax.hist(iris_feat['petallength'])
+#set labels & titles
+ax.set_title('Petal length of all species')
+ax.set_xlabel('Centimetres')
+ax.set_ylabel('Frequency')
+plt.savefig('petallength.png')
+
+fig, ax = plt.subplots()
+ax.hist(iris_feat['petalwidth'])
+#set labels & titles
+ax.set_title('Petal width of all species')
+ax.set_xlabel('Centimetres')
+ax.set_ylabel('Frequency')
+plt.savefig('petalwidth.png')
+
 '''for the pairs of variables'''
 # scatter plot to show the relationship between sepal lenght and sepal width
 # first setting the colors dictionary for a nice tidy output
