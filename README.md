@@ -30,10 +30,13 @@ I then spent a while playing around trying to get numPy to output the summary in
 
 I actually found the iloc feature when browsing solutions regarding datasets (https://www.analyticsvidhya.com/blog/2021/06/guide-to-data-visualization-with-python-part-1/) and it proved to be of much use to me and might have also made it possible to use the original dataset, good to know, and might go back and change that once I make more significant progress in other aspects. 
 This did lead me to successful creation of my histgrams and scatterplots, now to get the different variables to output.
+
 I managed to get a histogram output going to a png file in the way desired. 
 I went back and played around with the min(),max() and mean() keyword arguments to get the code to output numeric only values, and then began again working towards outputting these values into the text file.
+
 When I got some success using the numPy savetxt method, I discovered by reading the file on the numPy manual (numpy.org, n.d.) that the input would need to be an array, which I would then need to compile all of these into a single output..
-Doesn't work with tuples, trying with strings may be the way, but does this work with numPy
+After some playing with the savetxt, I elected to create different files to overcome the aforementioned issues with the array/tuple that was being created.
+
 
 After outputting mean semi-successfully to a png file, I am not sure it is the most meaningful to output.. or at least in the fashion that I have done so. I will explore further. 
 To get a more useful output, I need to differentiate the mean values, and output the mean values of certain features for each different species of iris. To do this I will call in the species and output different values according to the features
