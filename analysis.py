@@ -16,20 +16,16 @@ petallength = (iris_feat['petallength'])
 sum_petallength = petallength.to_numpy()
 np.savetxt("petallength.txt", sum_petallength)
 
-#print("These are the minimum values of the different features")
 mean = (iris.mean(0,True,None,True))
-#print(iris.min(0,True,None,True))
-min = (iris.min(0,True,None,True))
-#print("These are the maximum values of the different features")
-#print(iris.max(0,True,None,True))
-max = (iris.max(0,True,None,True))
-
 arr = mean.to_numpy()
-arr2 = min.to_numpy()
-arr3 = max.to_numpy()
-
 np.savetxt("outputmean.txt",arr)
+
+min = (iris.min(0,True,None,True))
+arr2 = min.to_numpy()
 np.savetxt("outputmin.txt",arr2)
+
+max = (iris.max(0,True,None,True))
+arr3 = max.to_numpy()
 np.savetxt("outputmax.txt",arr3)
 
 
