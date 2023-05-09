@@ -3,8 +3,10 @@ import pandas as pd
 # numpy will also be called to access the np attributes and evaluate some maths
 import numpy as np
 from numpy import random
-# and finally, matplotlib will be used to save a histogram and display a scatterplot
+# matplotlib will be used to save a histogram and display a scatterplot
 import matplotlib.pyplot as plt
+# seaborn for fun after the rest is finished
+import seaborn as sns
 '''firstly, the data will be called in and displayed using pandas,
  and then output to a text file'''
 # reading in the dataset
@@ -37,6 +39,7 @@ ax.hist(iris_feat['sepallength'])
 ax.set_title('Sepal length of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
+#calling in the savefig function
 plt.savefig('sepallength.png')
 
 fig, ax = plt.subplots()
@@ -70,7 +73,7 @@ colors = {'Iris-setosa':'g','Iris-virginica':'b','Iris-versicolor':'r'}
 # creating a figure and axis
 fig, ax = plt.subplots()
 # plot the diff data points
-for i in range(len(iris_feat['sepallength'])):
+for i in range(len(iris_feat['sepallength'])): #this puts limits in place
     plt.scatter(iris_feat['sepallength'][i], iris_feat['sepalwidth'][i],color=colors[iris_species[i]])
 ax.set_xlabel('Sepal Length (cm)')
 ax.set_ylabel('Sepal Width (cm)')
@@ -78,7 +81,7 @@ ax.set_title('Sepal Length vs Width')
 ax.legend()
 plt.show()
 
-colors = {'Iris-setosa':'g','Iris-virginica':'b','Iris-versicolor':'r'}
+colors = {'Iris-setosa':'c','Iris-virginica':'m','Iris-versicolor':'y'}
 fig, ax = plt.subplots()
 for i in range(len(iris_feat['petallength'])):
     plt.scatter(iris_feat['petallength'][i], iris_feat['petalwidth'][i],color=colors[iris_species[i]])
