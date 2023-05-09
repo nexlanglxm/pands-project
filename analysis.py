@@ -12,6 +12,9 @@ iris = pd.read_csv("iris_csv.csv")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
+petallength = (iris_feat['petallength'])
+sum_petallength = petallength.to_numpy()
+np.savetxt("petallength.txt", sum_petallength)
 
 #print("These are the minimum values of the different features")
 mean = (iris.mean(0,True,None,True))
