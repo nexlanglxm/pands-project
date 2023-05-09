@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 '''firstly, the data will be called in and displayed using pandas,
  and then output to a text file'''
 # reading in the dataset
-iris = pd.read_csv("iris_csv.csv")
+iris = pd.read_csv("iris.data")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
@@ -68,7 +68,7 @@ ax.set_ylabel('Frequency')
 plt.savefig('petalwidth.png')
 
 '''for the pairs of variables'''
-# scatter plot to show the relationship between sepal lenght and sepal width
+# scatter plot to show the relationship between the pairs
 # first setting the colors dictionary for a nice tidy output
 colors = {'Iris-setosa':'g','Iris-virginica':'b','Iris-versicolor':'r'}
 # creating a figure and axis
