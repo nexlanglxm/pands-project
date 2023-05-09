@@ -12,9 +12,9 @@ iris = pd.read_csv("iris.data")
 iris_feat = iris.iloc[:,:-1] # marking the column line using locater
 iris_species = iris.iloc[:,-1] 
 
-petallength = (iris_feat['petallength'])
-sum_petallength = petallength.to_numpy()
-np.savetxt("petallength.txt", sum_petallength)
+petallength = (iris_feat['petallength']) #calling from the dictionary that was created
+sum_petallength = petallength.to_numpy() #creating the ndarray
+np.savetxt("petallength.txt", sum_petallength) #calling in the array into the numpy savetxt
 
 mean = (iris.mean(0,True,None,True))
 arr = mean.to_numpy()
@@ -28,10 +28,6 @@ max = (iris.max(0,True,None,True))
 arr3 = max.to_numpy()
 np.savetxt("outputmax.txt",arr3)
 
-
-# the code for making the histogram which saves to png
-iris.plot(kind="hist")
-plt.savefig('histfreq.png')
 
 '''MAKE THIS CODE WORK TO MAKE HISTOGRAMS FOR THE 3 DIFFERENT VARIABLES'''
 #the code which will output the summary data into three separate histograms
