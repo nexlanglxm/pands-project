@@ -3,6 +3,7 @@ This is the readme file for the final project in the Programming and Scripting m
 The project is concerned with the well-known **Fisher's Iris data set**
 
 Fisher's Iris data set, also known as the **Iris flower data set**, is a dataset that records the length and width measurements for sepals and petals for three distinct Iris species: *Iris setosa*, *Iris virginica* and *Iris versicolor*.
+It is considered the best known database in pattern recognition literature according to (Dua and Graff, 2019), and is likened to the "Hello World" of Data Analysis (GeeksforGeeks, 2020b).
 
 
 
@@ -28,7 +29,7 @@ Following this, I elected to use a file which I got online (Pradhan, 2022) which
 I then spent a while playing around trying to get numPy to output the summary into a single text file.
 
 I actually found the iloc feature when browsing solutions regarding datasets (Rastogi, 2021) and it proved to be of much use to me and might have also made it possible to use the original dataset, good to know, and might go back and change that once I make more significant progress in other aspects. 
-This did lead me to successful creation of my histgrams and scatterplots, now to get the different variables to output.
+This did lead me to successful creation of my histograms and scatterplots, now to get the different variables to output.
 
 I managed to get a histogram output going to a png file in the way desired with help from the information on (Welch, n.d.). 
 I went back and played around with the min(),max() and mean() keyword arguments to get the code to output numeric only values, and then began again working towards outputting these values into the text file.
@@ -39,7 +40,7 @@ After some playing with the savetxt, I elected to create different files to over
 After outputting mean semi-successfully to a png file, I am not sure it is the most meaningful to output.. or at least in the fashion that I have done so. I will explore further. 
 To get a more useful output, I need to differentiate the mean values, and output the mean values of certain features for each different species of iris. To do this I will call in the species and output different values according to the features
 
-
+With the successful creation of the scatterplots outputting pairs of variables, and the different values going to their respective positions correctly, I look towards possibly using some Seaborn outputs to create a few neat looking outputs
 
 
 
