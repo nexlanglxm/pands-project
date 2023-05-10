@@ -81,7 +81,7 @@ ax.set_title('Sepal Length vs Width')
 ax.legend()
 plt.show()
 
-colors = {'Iris-setosa':'c','Iris-virginica':'m','Iris-versicolor':'y'}
+colors = {'Iris-setosa':'c','Iris-virginica':'m','Iris-versicolor':'#E59523'}
 fig, ax = plt.subplots()
 for i in range(len(iris_feat['petallength'])):
     plt.scatter(iris_feat['petallength'][i], iris_feat['petalwidth'][i],color=colors[iris_species[i]])
@@ -89,4 +89,8 @@ ax.set_xlabel('Petal Length (cm)')
 ax.set_ylabel('Petal Width (cm)')
 ax.set_title('Petal Length vs Width')
 ax.legend()
+plt.show()
+
+#the below seaborn plot showcases the relationship between the two variables and highlights their distributions
+sns.jointplot(x='sepallength', y='sepalwidth', color='#9E23E5', kind='hex', data=iris, space=0) 
 plt.show()
