@@ -40,7 +40,9 @@ After some playing with the savetxt, I elected to create different files to over
 After outputting mean semi-successfully to a png file, I am not sure it is the most meaningful to output.. or at least in the fashion that I have done so. I will explore further. 
 To get a more useful output, I need to differentiate the mean values, and output the mean values of certain features for each different species of iris. To do this I will call in the species and output different values according to the features
 
-With the successful creation of the scatterplots outputting pairs of variables, and the different values going to their respective positions correctly, I look towards possibly using some Seaborn outputs to create a few neat looking outputs
+With the successful creation of the scatterplots outputting pairs of variables, and the different values going to their respective positions correctly, I look towards possibly using some Seaborn outputs to create a few neat looking outputs.
+
+I got the information regarding different keyword arguments on (seaborn.pydata.org, n.d.), where I found different kinds of outputs such as 'kde' or 'hex'. It shows an interesting distribution of the different variables.
 
 
 
