@@ -46,7 +46,8 @@ With the successful creation of the scatterplots outputting pairs of variables, 
 I got the information regarding different keyword arguments on (seaborn.pydata.org, n.d.), where I found different kinds of outputs such as 'kde' or 'hex'. It shows an interesting distribution of the different variables.
 
 
-References.
+## References.
+
 Dua, D. and Graff, C. (2019). UCI Machine Learning Repository: Iris Data Set. [online] Available at: https://archive.ics.uci.edu/ml/datasets/iris [Accessed 10 May 2023].
 
 GeeksforGeeks. (2020a). Add column names to dataframe in Pandas. [online] Available at: https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/ [Accessed 20 Apr. 2023].
