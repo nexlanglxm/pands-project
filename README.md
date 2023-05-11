@@ -1,4 +1,4 @@
-# pands-project
+# The Iris Project
 This is the readme file for the final project in the Programming and Scripting module
 The project is concerned with the well-known **Fisher's Iris data set**
 
