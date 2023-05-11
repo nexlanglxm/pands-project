@@ -45,6 +45,7 @@ With the successful creation of the scatterplots outputting pairs of variables, 
 
 I got the information regarding different keyword arguments on (seaborn.pydata.org, n.d.), where I found different kinds of outputs such as 'kde' or 'hex'. It shows an interesting distribution of the different variables.
 
+So, the file when run will generate several summary text files, and histograms, which will be saved. It will also generate two scatterplots and a seaborn jointplot which will be output onto the system.
 
 ## References.
 
