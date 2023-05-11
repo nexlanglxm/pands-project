@@ -16,19 +16,19 @@ iris_species = iris.iloc[:,-1]
 
 petallength = (iris_feat['petallength']) #calling from the dictionary that was created
 sum_petallength = petallength.to_numpy() #creating the ndarray
-np.savetxt("petallength.txt", sum_petallength) #calling in the array into the numpy savetxt
+np.savetxt("sumpetlength.txt", sum_petallength) #calling in the array into the numpy savetxt
 
 petalwidth = (iris_feat['petalwidth']) #calling from the dictionary that was created
 sum_petalwidth = petalwidth.to_numpy() #creating the ndarray
-np.savetxt("petalwidth.txt", sum_petalwidth) #calling in the array into the numpy savetxt
+np.savetxt("sumpetwidth.txt", sum_petalwidth) #calling in the array into the numpy savetxt
 
 sepallength = (iris_feat['sepallength']) #calling from the dictionary that was created
 sum_sepallength = sepallength.to_numpy() #creating the ndarray
-np.savetxt("sepallength.txt", sum_sepallength)
+np.savetxt("sumseplength.txt", sum_sepallength)
 
 sepalwidth = (iris_feat['sepalwidth']) #calling from the dictionary that was created
 sum_sepalwidth = sepalwidth.to_numpy() #creating the ndarray
-np.savetxt("sepalwidth.txt", sum_sepalwidth)
+np.savetxt("sumsepwidth.txt", sum_sepalwidth)
 
 mean = (iris.mean(0,True,None,True))
 arr = mean.to_numpy()
@@ -42,9 +42,7 @@ max = (iris.max(0,True,None,True))
 arr3 = max.to_numpy()
 np.savetxt("outputmax.txt",arr3)
 
-
-'''MAKE THIS CODE WORK TO MAKE HISTOGRAMS FOR THE 3 DIFFERENT VARIABLES'''
-#the code which will output the summary data into three separate histograms
+#the code which will output the summary data into separate histograms
 fig, ax = plt.subplots()
 ax.hist(iris_feat['sepallength'])
 #set labels & titles
@@ -52,7 +50,7 @@ ax.set_title('Sepal length of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
 #calling in the savefig function
-plt.savefig('sepallength.png')
+plt.savefig('histsepallength.png')
 
 fig, ax = plt.subplots()
 ax.hist(iris_feat['sepalwidth'])
@@ -60,7 +58,7 @@ ax.hist(iris_feat['sepalwidth'])
 ax.set_title('Sepal width of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
-plt.savefig('sepalwidth.png')
+plt.savefig('histsepalwidth.png')
 
 fig, ax = plt.subplots()
 ax.hist(iris_feat['petallength'])
@@ -68,7 +66,7 @@ ax.hist(iris_feat['petallength'])
 ax.set_title('Petal length of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
-plt.savefig('petallength.png')
+plt.savefig('histpetallength.png')
 
 fig, ax = plt.subplots()
 ax.hist(iris_feat['petalwidth'])
@@ -76,7 +74,7 @@ ax.hist(iris_feat['petalwidth'])
 ax.set_title('Petal width of all species')
 ax.set_xlabel('Centimetres')
 ax.set_ylabel('Frequency')
-plt.savefig('petalwidth.png')
+plt.savefig('histpetalwidth.png')
 
 '''for the pairs of variables'''
 # scatter plot to show the relationship between the pairs
