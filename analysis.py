@@ -18,6 +18,18 @@ petallength = (iris_feat['petallength']) #calling from the dictionary that was c
 sum_petallength = petallength.to_numpy() #creating the ndarray
 np.savetxt("petallength.txt", sum_petallength) #calling in the array into the numpy savetxt
 
+petalwidth = (iris_feat['petalwidth']) #calling from the dictionary that was created
+sum_petalwidth = petalwidth.to_numpy() #creating the ndarray
+np.savetxt("petalwidth.txt", sum_petalwidth) #calling in the array into the numpy savetxt
+
+sepallength = (iris_feat['sepallength']) #calling from the dictionary that was created
+sum_sepallength = sepallength.to_numpy() #creating the ndarray
+np.savetxt("sepallength.txt", sum_sepallength)
+
+sepalwidth = (iris_feat['sepalwidth']) #calling from the dictionary that was created
+sum_sepalwidth = sepalwidth.to_numpy() #creating the ndarray
+np.savetxt("sepalwidth.txt", sum_sepalwidth)
+
 mean = (iris.mean(0,True,None,True))
 arr = mean.to_numpy()
 np.savetxt("outputmean.txt",arr)
